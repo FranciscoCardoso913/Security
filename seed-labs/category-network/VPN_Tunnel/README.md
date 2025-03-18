@@ -87,3 +87,18 @@ listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
 
 ```
 
+5
+
+```
+10.9.0.5:44447 --> 0.0.0.0:9090
+ Inside: 192.168.53.99 --> 192.168.60.5
+
+```
+```
+tcpdump -i eth0 icmp
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+15:44:21.922083 IP 192.168.53.99 > 7082b0f8e861: ICMP echo request, id 22, seq 9, length 64
+15:44:21.922102 IP 7082b0f8e861 > 192.168.53.99: ICMP echo reply, id 22, seq 9, length 64
+```
+
