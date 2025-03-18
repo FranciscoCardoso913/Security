@@ -239,5 +239,5 @@ Generated Key: bbee994956d34f5cd8c2a4961bbda1b1
 Generated Key: 4a79818f878be98039ee7831b04c9e13
 
 ```
-The output of the key generation was consistent, and moving the mouse or performing other activities did not affect the result, as /dev/urandom does not rely on system entropy in the same way as /dev/random.
+The output of the key generation was consistent, and moving the mouse or performing other activities did not affect the result, as `/dev/urandom` does not rely on system entropy in the same way as `/dev/random`.
 
