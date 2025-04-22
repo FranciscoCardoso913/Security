@@ -7,10 +7,12 @@ services:
         container_name: www-10.9.0.80
         tty: true
         cap_add:
-                - ALL
+            - ALL
         networks:
             net-10.9.0.0:
                 ipv4_address: 10.9.0.80
+        ports:
+            - "8080:80"   # <--- add this line
 
 networks:
     net-10.9.0.0:
@@ -18,4 +20,3 @@ networks:
         ipam:
             config:
                 - subnet: 10.9.0.0/24
-
